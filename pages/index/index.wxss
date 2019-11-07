@@ -1,6 +1,7 @@
 /* 首页导航 */
 page{
-  color: #666;
+	color: #666;
+	padding: 10rpx;
 }
 .nav_wrap{
 	
