@@ -1,12 +1,12 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/detail/detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "测试开发君",
+    "navigationBarTitleText": "哔哩哔哩~-bilibili",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json"

@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "bilibili",
+  "navigationBarTitleText": "哔哩哔哩~-bilibili",
   "usingComponents": {
     "mytitle":"../../components/mytitle/mytitle"
   }

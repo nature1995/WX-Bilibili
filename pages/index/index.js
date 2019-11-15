@@ -37,6 +37,12 @@ Page({
             navList:res.data.data.navList
           })
         }
+      },
+      fail: function() {
+        // fail
+      },
+      complete: function() {
+        // complete
       }
     })
 
@@ -55,17 +61,47 @@ Page({
             swiperList:res.data.data.swiperList
           })
         }
+      },
+      fail: function() {
+        // fail
+      },
+      complete: function() {
+        // complete
       }
     })
   },
 
+  // 获取视频列表
+  getVideosList(){
+    let that=this;
+    wx.request({
+      url: 'https://easy-mock.com/mock/5c1dfd98e8bfa547414a5278/bili/videosList',
+      success(res){
+        console.log(res);
+        if(res.data.code===0){
+          that.setData({
+            videosList:res.data.data.videosList
+          })
+        }
+      },
+      fail: function() {
+        // fail
+      },
+      complete: function() {
+        // complete
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    //1. 获取首页导航数据
+    //1 获取首页导航数据
     this.getNavList();
+    //2 获取轮播图数据
     this.getSwiperList();
+    //3 d调用获取视频列表函数
+    this.getVideosList();
   },
 
   /**
